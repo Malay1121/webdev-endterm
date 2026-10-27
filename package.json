@@ -1,0 +1,9 @@
+{
+  "name": "splitkaro",
+  "version": "1.0.0",
+  "description": "Expense splitting app for friends and groups (MERN)",
+  "scripts": {
+    "build": "npm install --prefix server && npm install --prefix client --include=dev && npm run build --prefix client",
+    "start": "npm start --prefix server"
+  }
+}
