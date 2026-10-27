@@ -2,8 +2,8 @@
 
 SplitKaro is a simple expense splitting web app made using the MERN stack. It is useful for trips, hostel rooms, flatmates or any plan where a group of friends spend money together and later get confused about who owes whom.
 
-**Live link:** _add deployed link here_
-**Demo video:** _add video link here_
+**Live link:** [splitkaro-ikwf.onrender.com](https://splitkaro-ikwf.onrender.com/)
+**Demo video:** [drive.google.com/file/d/1x0_s6fVzMIQJXFr1WNygB-0k1R4ALh7B/view](https://drive.google.com/file/d/1x0_s6fVzMIQJXFr1WNygB-0k1R4ALh7B/view?usp=sharing)
 
 ## Problem Statement
 
@@ -27,13 +27,13 @@ SplitKaro solves this by letting you make a group, add expenses as they happen a
 
 ## Tech Stack
 
-| Part | Tech |
-| --- | --- |
-| Frontend | React (Vite), React Router, Axios, plain CSS |
-| Backend | Node.js, Express |
-| Database | MongoDB with Mongoose |
-| Auth | JSON Web Token, bcryptjs |
-| Deployment | Render (single web service) + MongoDB Atlas |
+| Part       | Tech                                         |
+| ---------- | -------------------------------------------- |
+| Frontend   | React (Vite), React Router, Axios, plain CSS |
+| Backend    | Node.js, Express                             |
+| Database   | MongoDB with Mongoose                        |
+| Auth       | JSON Web Token, bcryptjs                     |
+| Deployment | Render (single web service) + MongoDB Atlas  |
 
 ## Main Workflows
 
@@ -73,22 +73,22 @@ webdev_endterm/
 
 All routes except register and login need the header `Authorization: Bearer <token>`.
 
-| Method | Route | Description |
-| --- | --- | --- |
-| POST | /api/auth/register | create account |
-| POST | /api/auth/login | login |
-| GET | /api/auth/me | get logged in user |
-| GET | /api/groups | my groups with my balance |
-| POST | /api/groups | create group |
-| GET | /api/groups/:id | group details |
-| DELETE | /api/groups/:id | delete group (creator only) |
-| POST | /api/groups/:id/members | add member by email |
-| GET | /api/groups/:id/expenses | list expenses |
-| POST | /api/groups/:id/expenses | add expense |
-| DELETE | /api/expenses/:id | delete expense |
-| GET | /api/groups/:id/balances | balances and suggested payments |
-| GET | /api/groups/:id/settlements | payment history |
-| POST | /api/groups/:id/settle | record a payment |
+| Method | Route                       | Description                     |
+| ------ | --------------------------- | ------------------------------- |
+| POST   | /api/auth/register          | create account                  |
+| POST   | /api/auth/login             | login                           |
+| GET    | /api/auth/me                | get logged in user              |
+| GET    | /api/groups                 | my groups with my balance       |
+| POST   | /api/groups                 | create group                    |
+| GET    | /api/groups/:id             | group details                   |
+| DELETE | /api/groups/:id             | delete group (creator only)     |
+| POST   | /api/groups/:id/members     | add member by email             |
+| GET    | /api/groups/:id/expenses    | list expenses                   |
+| POST   | /api/groups/:id/expenses    | add expense                     |
+| DELETE | /api/expenses/:id           | delete expense                  |
+| GET    | /api/groups/:id/balances    | balances and suggested payments |
+| GET    | /api/groups/:id/settlements | payment history                 |
+| POST   | /api/groups/:id/settle      | record a payment                |
 
 ## Running Locally
 
